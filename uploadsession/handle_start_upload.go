@@ -5,7 +5,7 @@ import (
 )
 
 func (s *TransferSession) handleStartUpload(filename string, size uint64, mimetype string) {
-	s.metadata = TransferMetadata{
+	s.Metadata = TransferMetadata{
 		Filename: filename,
 		Size:     size,
 		Mimetype: mimetype,
